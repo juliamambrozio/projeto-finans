@@ -19,8 +19,10 @@
   <body>
 
         <header> <!--  ínicio cabeçalho -->
+            <!-- navegação -->
             <nav class="navbar navbar-expand-sm navbar-light bg-warning justify-content-end">
-                <div class="container">
+
+                <div class="container"> <!-- começo container -->
                     <a href="#" class="navbar-brand"> <!-- logo -->
                         <img src="img/logo.png" alt="" style="width: 142px;">
                     </a>
@@ -30,7 +32,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- navegação -->
                 <div class="collpase navbar-collapse" id="nav-principal"> <!-- faz sumir e posicionar a navegação-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -50,11 +51,56 @@
                         </li>
                     </ul>
                 </div> <!-- fim navegação -->
-            </div>
+            </div>  <!-- fim container -->
             </nav>
         </header> <!--  fim cabeçalho -->
 
-      
+
+        <section class="home"> <!-- ínicio seção home -->
+            <div class="container"> <!-- começo container -->
+
+                <div class="row"> <!-- começo row -->
+
+                    <div class="col-md-6 d-flex"> <!-- separação do conteúdo, texto/seção home -->
+
+                        <div class="align-self-center"> <!-- centralizar conteúdo na vertical-->
+
+                            <h1 class="display-4 text-white">Suas contas, descomplicadas</h1> <!-- tamanho do texto -->
+
+                            <p class="text-white">Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.</p>
+
+                            <form action="get" class="mt-4 mb-4">
+                                <div class="input-group input-group-lg">
+                                    <input class="form-control" type="text" placeholder="Seu e-mail"> <!-- form-control: formtação de formulário -->
+                                   <div class="input-group-append"> <!-- botão fica no lado direito -->
+                                    <button type="button" class="btn btn-primary">Cadastre-se</button>
+                                   </div>
+                                </div>
+                            </form>
+
+                                <p class="text-white">Disponível para
+                                    <a href="#" class="btn btn-outline-light ml-2 mr-2"> 
+                                    <i class="fa-brands fa-android fa-lg"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-light">
+                                    <i class="fa-brands fa-apple fa-lg"></i>
+                                    </a>
+                                </p>
+                               
+                        </div> 
+                    </div> <!-- texto/seção home -->
+
+                        <div class="col-md-6 d-none d-md-block"> <!-- separação do conteúdo, img/seção home -->
+                            <!--   d-none: some a imagem
+                            d-md-block: quando chegar na tela média ela irá aparecer -->
+                            <img src="img/capa-mulher.png" alt="Mulher segurando uma moeda de um real">
+                        </div> <!-- img/seção home -->
+
+                </div> <!-- fim row -->
+
+            </div> <!-- fim container -->
+
+        </section> <!-- fim seção home -->
 
 
 
